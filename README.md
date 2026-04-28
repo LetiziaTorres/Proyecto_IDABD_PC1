@@ -61,44 +61,20 @@ Responder esta pregunta permite a marketplaces y vendedores digitales enfocar su
 
 > Las visualizaciones se generan en el notebook adjunto (`PF_Big data.ipynb`). A continuación se describe cada una con sus hallazgos clave.
 
-### Viz 1 – Distribución de precios: 
-
+### Viz 1 – Distribución de precios
 Los precios presentan un sesgo positivo (hacia la derecha), donde la mayoría de productos se concentra en rangos bajos, mientras que existe una minoría con precios muy altos. Esto sugiere un mercado altamente competitivo con predominancia de productos accesibles.
 
-### Viz 2 – Distribución de precio y flete (boxplot + histograma)
+### Viz 2 – Alta satisfacción general
+La distribución de calificaciones muestra una fuerte concentración en ratings de 4 y 5, lo que indica que, en términos generales, los clientes tienen una experiencia positiva con sus compras.
 
-- **Precio:** media = 120.65 BRL | mediana = 74.99 BRL | max = 6,735 BRL
-- **Flete:** media = 19.99 BRL | mediana = 16.26 BRL | max = 409.68 BRL
+### Viz 3 – Tiempo de entrega
+La mayoría de pedidos se entrega en pocos días, aunque existen algunos casos extremos con tiempos considerablemente altos. Esto evidencia un sistema logístico eficiente en promedio, pero con inconsistencias puntuales.
 
-**Hallazgo:** Ambas variables tienen colas muy largas (outliers extremos). El 75% de los productos cuesta menos de 135 BRL. Se requerirá transformación logarítmica antes del modelado. El flete representa en promedio el 16.5% del precio del producto.
+### Viz 4 – Impacto del tiempo en la satisfacción
+Se observa una relación donde mayores tiempos de entrega tienden a asociarse con calificaciones más bajas, lo que sugiere que la rapidez en la entrega es un factor clave en la experiencia del cliente.
 
-### Viz 3 – Nulos por columna (heatmap)
-
-- review_comment_title: 87,656 nulos (83.7%)
-- review_comment_message: 58,247 nulos (55.6%)
-- order_delivered_customer_date: 2,965 nulos (3.0%)
-- product_category_name: 610 nulos (1.9%)
-
-**Hallazgo:** La ausencia de comentarios de texto es estructural (muchos clientes solo ponen score sin texto). Las fechas de entrega nulas corresponden a órdenes canceladas o en tránsito. **Estrategia:** imputar categorías por mediana de categorías similares; excluir órdenes sin fecha de entrega del análisis de tiempo.
-
-### Viz 4 – review_score promedio por categoría de producto (top 15 y bottom 5)
-
-**Hallazgo:** Categorías como `cds_dvds_musicals` y `fashion_childrens_clothes` tienen scores promedio >4.5, mientras que `security_and_services` y `office_furniture` promedian <3.5. Esto sugiere que la categoría per se es un predictor relevante de satisfacción.
-
-### Viz 5 – Tiempo de entrega vs. review_score (días reales vs. estimados)
-
-**Hallazgo:** Se observa correlación negativa entre días de retraso y review_score. Órdenes entregadas antes de la fecha estimada tienen score promedio de 4.3 vs. 2.9 para las que llegan tarde. El tiempo de entrega es probablemente el predictor más fuerte de insatisfacción, por encima del precio.
-
-### Viz 6 – Método de pago vs. ticket promedio
-
-| Método de pago | % transacciones | Ticket medio (BRL) |
-|----------------|-----------------|--------------------|
-| credit_card    | 73.9%           | 163                |
-| boleto         | 19.1%           | 108                |
-| voucher        | 5.5%            | 64                 |
-| debit_card     | 1.5%            | 144                |
-
-**Hallazgo:** El pago con tarjeta de crédito está asociado a tickets más altos. Los compradores de boleto (pago en efectivo, típico en Brasil) tienden a comprar productos más baratos. Esto puede relacionarse con el perfil socioeconómico y tolerancia al riesgo.
+### Viz 5 – Categorías más vendidas vs satisfacción
+Las ventas se concentran en ciertas categorías específicas; sin embargo, las diferencias en el rating promedio entre categorías son pequeñas, lo que indica que la satisfacción del cliente depende más de factores operativos (como la entrega) que del tipo de producto.
 
 ## 5. Hipótesis de negocio
 
