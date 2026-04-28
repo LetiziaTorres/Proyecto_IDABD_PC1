@@ -12,6 +12,7 @@
 | Hipótesis | Letizia Torres |
 | IA- Enriquecimiento de Datos| Marcelo Villafuerte |
 | ----- | Integrante5 |
+| Limitaciones del Análisis Inicial- Riesgos del Dataset| Pablo Vega |
 
 ## 2. Descripción del problema de negocio
 
@@ -75,6 +76,27 @@ El análisis de la relación entre tiempo de entrega y calificación del cliente
 
 ### Viz 5 – Categorías más vendidas vs satisfacción
 Las ventas se concentran en un conjunto reducido de categorías, lo que indica una demanda focalizada en ciertos segmentos del mercado. Sin embargo, al analizar el rating promedio por categoría, se observa que las diferencias en la satisfacción entre ellas son relativamente pequeñas. Esto sugiere que el tipo de producto no es el principal determinante de la satisfacción del cliente, y que factores transversales, como la calidad del servicio o la eficiencia en la entrega, tienen un mayor peso en la percepción final del usuario.
+
+### Dato sorprendente del EDA
+
+Un hallazgo particularmente relevante del análisis exploratorio fue la alta dispersión en los tiempos de entrega. 
+Aunque el promedio de entrega se mantiene en aproximadamente 4 días, se identificaron casos extremos de hasta 208 días.
+
+Esto sugiere que, si bien la operación logística promedio es eficiente, existe una minoría de pedidos con fallas severas que podrían estar afectando desproporcionadamente la satisfacción del cliente.
+
+### 4.1 Limitaciones del análisis inicial
+
+Si bien el EDA permitió identificar patrones preliminares relevantes, el análisis presenta ciertas limitaciones que deben considerarse al interpretar los resultados:
+
+- **No se observa recompra directamente:** El dataset no contiene una variable explícita de recompra o retención de cliente, por lo que esta dimensión deberá aproximarse en etapas posteriores mediante comportamiento transaccional.
+
+- **Sesgo en las calificaciones:** La distribución de review_score está altamente concentrada en ratings de 4 y 5 estrellas, lo que puede dificultar el análisis de casos de insatisfacción por desbalance de clases.
+
+- **Variables externas no incluidas:** El dataset no incorpora factores como promociones activas, stock disponible, competencia o campañas comerciales, que también pueden influir en la satisfacción.
+
+- **Outliers logísticos extremos:** Existen entregas con tiempos atípicamente altos que pueden distorsionar métricas agregadas si no se tratan adecuadamente.
+
+Estas limitaciones no invalidan el análisis, pero sí delimitan el alcance interpretativo de la PC1 y orientan el enfoque metodológico de la siguiente etapa.
 
 ## 5. Hipótesis de negocio
 
@@ -190,6 +212,7 @@ La IA no fue utilizada para reemplazar el análisis de datos ni para generar res
 | Enriquecimiento | “Desarrollar el enriquecimiento teniendo en cuenta calendario, festivos y tipo de cambio.” | Se validó que las fuentes propuestas sean coherentes con el caso Olist |
 | Plan de trabajo | “Modificar el plan de trabajo dejando claro que Etapa 2 es un entregable futuro.” | Se ajustó el texto para no presentar resultados futuros como ya realizados |
 | Apéndice de IA | “Redactar un apéndice de uso de IA para un informe académico.” | Se revisó manualmente para declarar el uso real y no exagerar el alcance |
+| Mejora de EDA / Limitaciones |	“Redactar limitaciones metodológicas del dataset y destacar hallazgo relevante del EDA para fortalecer el análisis inicial.” | Se validó que las limitaciones y hallazgos estén respaldados por el notebook y el dataset utilizado |
 
 ### 8.3 Validación del contenido generado
 
