@@ -62,19 +62,19 @@ Responder esta pregunta permite a marketplaces y vendedores digitales enfocar su
 > Las visualizaciones se generan en el notebook adjunto (`PF_Big data.ipynb`). A continuación se describe cada una con sus hallazgos clave.
 
 ### Viz 1 – Distribución de precios
-Los precios presentan un sesgo positivo (hacia la derecha), donde la mayoría de productos se concentra en rangos bajos, mientras que existe una minoría con precios muy altos. Esto sugiere un mercado altamente competitivo con predominancia de productos accesibles.
+El análisis de la variable precio evidencia una distribución fuertemente sesgada hacia la derecha, donde el precio promedio (≈120 BRL) es significativamente mayor que la mediana (≈75 BRL). Esto confirma la presencia de valores extremos elevados que influyen en el promedio. Asimismo, el 75% de los productos se encuentra por debajo de aproximadamente 135 BRL, lo que indica que la mayor parte del mercado se concentra en rangos de precios bajos y medios. La existencia de productos con precios máximos cercanos a 6735 BRL evidencia la presencia de outliers que no representan el comportamiento típico, pero sí reflejan la existencia de un segmento premium minoritario. En términos de negocio, esto sugiere un mercado altamente competitivo donde el precio no es el principal diferenciador.
 
 ### Viz 2 – Alta satisfacción general
-La distribución de calificaciones muestra una fuerte concentración en ratings de 4 y 5, lo que indica que, en términos generales, los clientes tienen una experiencia positiva con sus compras.
+La distribución de calificaciones muestra una clara concentración en ratings de 4 y 5, lo que indica un nivel de satisfacción general elevado entre los clientes. Esto sugiere que, en términos globales, la experiencia de compra cumple con las expectativas del usuario. Sin embargo, esta alta concentración también puede ocultar variaciones importantes en la experiencia, por lo que resulta necesario analizar factores específicos que expliquen las calificaciones más bajas.
 
 ### Viz 3 – Tiempo de entrega
-La mayoría de pedidos se entrega en pocos días, aunque existen algunos casos extremos con tiempos considerablemente altos. Esto evidencia un sistema logístico eficiente en promedio, pero con inconsistencias puntuales.
+El tiempo de entrega presenta una distribución concentrada en rangos bajos, lo que indica que la mayoría de pedidos se entrega en pocos días. No obstante, se identifican valores extremos que alcanzan hasta 208 días, lo que evidencia la existencia de casos atípicos dentro del sistema logístico. Aunque estos outliers no representan el comportamiento general, pueden afectar significativamente la percepción del servicio en situaciones específicas.
 
 ### Viz 4 – Impacto del tiempo en la satisfacción
-Se observa una relación donde mayores tiempos de entrega tienden a asociarse con calificaciones más bajas, lo que sugiere que la rapidez en la entrega es un factor clave en la experiencia del cliente.
+El análisis de la relación entre tiempo de entrega y calificación del cliente muestra una tendencia donde mayores tiempos de entrega se asocian con menores niveles de satisfacción. Aunque la relación no es perfectamente lineal, se observa que los pedidos con tiempos más prolongados tienden a concentrarse en ratings más bajos. Esto sugiere que la rapidez en la entrega es un factor crítico en la experiencia del cliente, y que mejoras en la logística podrían generar impactos directos en la satisfacción.
 
 ### Viz 5 – Categorías más vendidas vs satisfacción
-Las ventas se concentran en ciertas categorías específicas; sin embargo, las diferencias en el rating promedio entre categorías son pequeñas, lo que indica que la satisfacción del cliente depende más de factores operativos (como la entrega) que del tipo de producto.
+Las ventas se concentran en un conjunto reducido de categorías, lo que indica una demanda focalizada en ciertos segmentos del mercado. Sin embargo, al analizar el rating promedio por categoría, se observa que las diferencias en la satisfacción entre ellas son relativamente pequeñas. Esto sugiere que el tipo de producto no es el principal determinante de la satisfacción del cliente, y que factores transversales, como la calidad del servicio o la eficiencia en la entrega, tienen un mayor peso en la percepción final del usuario.
 
 ## 5. Hipótesis de negocio
 
