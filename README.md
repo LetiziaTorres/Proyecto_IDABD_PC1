@@ -61,12 +61,9 @@ Responder esta pregunta permite a marketplaces y vendedores digitales enfocar su
 
 > Las visualizaciones se generan en el notebook adjunto (`PF_Big data.ipynb`). A continuación se describe cada una con sus hallazgos clave.
 
-### Viz 1 – Distribución del review_score
+### Viz 1 – Distribución de precios: 
 
-**Scores:**  
-1 → 11,424 | 2 → 3,151 | 3 → 8,179 | 4 → 19,142 | 5 → 57,328
-
-**Hallazgo:** La distribución está fuertemente sesgada hacia puntuaciones positivas (5 estrellas = 54.8% de las reseñas). Esto implica un desbalance de clases que deberá tratarse en modelos predictivos (SMOTE, class_weight). Los scores 1 y 3 son los más informativos para identificar insatisfacción.
+Los precios presentan un sesgo positivo (hacia la derecha), donde la mayoría de productos se concentra en rangos bajos, mientras que existe una minoría con precios muy altos. Esto sugiere un mercado altamente competitivo con predominancia de productos accesibles.
 
 ### Viz 2 – Distribución de precio y flete (boxplot + histograma)
 
