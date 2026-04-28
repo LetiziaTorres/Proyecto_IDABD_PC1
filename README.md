@@ -10,7 +10,7 @@
 | EDA | Camila Torres |
 | --- | Integrante2 |
 | Hipótesis | Letizia Torres |
-| ---- | Integrante4 |
+| IA- Enriquecimiento de Datos| Marcelo Villafuerte |
 | ----- | Integrante5 |
 
 ## 2. Descripción del problema de negocio
@@ -78,22 +78,20 @@ Las ventas se concentran en ciertas categorías específicas; sin embargo, las d
 
 ## 5. Hipótesis de negocio
 
-Las siguientes hipótesis serán investigadas en la Etapa 2 mediante modelos predictivos y análisis estadísticos:
+**H1 – Precio y satisfacción:**
+¿Los productos en rangos de precio medio (ni los más baratos ni los más costosos) obtienen calificaciones más altas que los extremos de la distribución de precios?
 
-**H1 – Tiempo de entrega como predictor dominante**  
-¿Es el tiempo de entrega (real vs. estimado) el factor con mayor peso predictivo sobre el review_score del cliente, por encima del precio o la categoría del producto?
+**H2 – Umbral crítico de tiempo de entrega:**
+¿Existe un número específico de días de entrega a partir del cual la calificación del cliente cae de forma significativa, o la relación es gradual y continua?
 
-**H2 – Efecto del precio relativo en la satisfacción**  
-¿Los productos con una relación flete/precio alta (>30%) tienen significativamente menor review_score que los productos con flete bajo, independientemente de la categoría?
+**H3 – Casos extremos logísticos:**
+¿Los pedidos con tiempos de entrega atípicamente altos (outliers) concentran de forma desproporcionada las calificaciones de 1 y 2 estrellas, y comparten características comunes como región geográfica o categoría de producto?
 
-**H3 – Concentración de vendedores y calidad del servicio**  
-¿Los vendedores con mayor volumen de ventas (top 10%) ofrecen tiempos de entrega más confiables y obtienen calificaciones más altas que los vendedores pequeños?
+**H4 – Categoría como moderadora:**
+¿La categoría del producto modera el efecto del tiempo de entrega sobre la satisfacción? Es decir, ¿en algunas categorías los clientes toleran más la demora que en otras?
 
-**H4 – Estacionalidad y satisfacción**  
-¿Las compras realizadas durante periodos de alta demanda (Navidad, Black Friday, Día de los Niños en Brasil) presentan peores tiempos de entrega y menor review_score debido a la saturación logística?
-
-**H5 – Recompra y calidad percibida**  
-¿Los clientes que dieron 5 estrellas en su primera compra tienen mayor probabilidad de realizar una segunda compra en los siguientes 6 meses?
+**H5 – Perfil del cliente insatisfecho:**
+¿Es posible identificar un perfil de compra (combinación de precio, categoría y tiempo de entrega) que prediga con alta probabilidad una calificación baja (1–2 estrellas), a pesar del contexto general de alta satisfacción observado en el EDA?
 
 ## 6. Enriquecimiento de datos
 
