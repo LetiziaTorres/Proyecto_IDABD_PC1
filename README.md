@@ -62,6 +62,7 @@ Responder esta pregunta permite a marketplaces y vendedores digitales enfocar su
 ## 4. EDA Inicial
 
 > Las visualizaciones se generan en el notebook adjunto (`PF_Big data.ipynb`). A continuación se describe cada una con sus hallazgos clave.
+> Link de acceso: 'https://colab.research.google.com/drive/16QfeZoHF3E5pBcpugpKik3W9zcM3gZp4?usp=sharing'
 
 ### Viz 1 – Distribución de precios
 El análisis de la variable precio evidencia una distribución fuertemente sesgada hacia la derecha, donde el precio promedio (≈120 BRL) es significativamente mayor que la mediana (≈75 BRL). Esto confirma la presencia de valores extremos elevados que influyen en el promedio. Asimismo, el 75% de los productos se encuentra por debajo de aproximadamente 135 BRL, lo que indica que la mayor parte del mercado se concentra en rangos de precios bajos y medios. La existencia de productos con precios máximos cercanos a 6735 BRL evidencia la presencia de outliers que no representan el comportamiento típico, pero sí reflejan la existencia de un segmento premium minoritario. En términos de negocio, esto sugiere un mercado altamente competitivo donde el precio no es el principal diferenciador.
