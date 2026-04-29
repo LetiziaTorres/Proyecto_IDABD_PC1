@@ -1,4 +1,5 @@
 ## PC1 – Propuesta y EDA Inicial
+*Presentación PPT* 'https://canva.link/p4t87xg2r8f4bo1'
 ## Caso: ¿Qué hace que un producto triunfe en e-commerce?
 
 # Proyecto MarketPulse Analytics - Análisis de Satisfacción del Cliente (Olist)
